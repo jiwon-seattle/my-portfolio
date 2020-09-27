@@ -131,6 +131,10 @@ main {
       @include easeOut;
     }
   }
+
+  figcaption {
+    color: $secondary-color;
+  }
 }
 
 // button styles
