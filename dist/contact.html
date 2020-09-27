@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <head profile="http://www.w3.org/2005/10/profile">
-    <link rel="icon" type="image/png" href="img/portrait.png">
+      <link rel="icon" type="image/png" href="img/portrait.png">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
@@ -12,9 +12,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Welcome to My Portfolio</title>
+    <title>Contact</title>
   </head>
-  <body id="bg-img">
+  <body>
     <header>
       <div class="menu-btn">
         <div class="btn-line"></div>
@@ -27,8 +27,8 @@
           <div class="portrait"></div>
         </div>
         <ul class="menu-nav">
-          <li class="nav-item current">
-            <a href="~/" class="nav-link"> Home </a>
+          <li class="nav-item">
+            <a href="/" class="nav-link"> Home </a>
           </li>
           <li class="nav-item">
             <a href="about.html" class="nav-link"> About me </a>
@@ -36,21 +36,35 @@
           <li class="nav-item">
             <a href="work.html" class="nav-link"> My Work </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item current">
             <a href="contact.html" class="nav-link"> Contact </a>
           </li>
         </ul>
       </nav>
     </header>
-    <main id="home">
-      <h1 class="lg-heading">Jiwon <span class="text-secondary">Han</span></h1>
-      <h2 class="sm-heading text-effects">Web Developer, Photogragher, Hiker</h2>
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/jiwon1han/"> <i class="fab fa-linkedin fa-2x"></i> </a>
-        <a href="https://github.com/jiwon-seattle"> <i class="fab fa-github fa-2x"></i> </a>
-        <a href="https://www.facebook.com/"> <i class="fab fa-facebook fa-2x"></i> </a>
+    <main id="contact">
+      <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
+      <h2 class="sm-heading text-effects">
+        <strong>I welcome to any comments or feedbacks!</strong>
+      </h2>
+      <div class="contact-info">
+        <div class="contact_icon">
+	  			<ul class="contact">
+	  				<li class="items"><i class="fa fa-envelope" aria-hidden="true"></i><span>jiwon1.han@gmail.com</span> </li>
+	  				<li class="items"><i class="fa fa-phone" aria-hidden="true"></i> <span>+1 425-362-9248</span></li>
+	  				<li class="items"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Seattle, WA & Seoul, Korea</span></li>
+	  			</ul>	  			
+	  		</div>
+        <div id="map"></div>
+        </div>
       </div>
     </main>
+    <footer id="main-footer">Copyright &copy; 2020 by Jiwon</footer>
     <script src="js/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsriCmQORUF5DGcB4rMbDfsFXy6GvWfLQ&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

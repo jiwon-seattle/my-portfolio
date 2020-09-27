@@ -4,12 +4,70 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .sm-heading {
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+  .text-effects {
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 23em;
+    }
+  }
+
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: black;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
 }
 
 // desktop & laptops
 @include mediaLg {
   .projects {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .sm-heading {
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+  }
+
+  .text-effects {
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+      blinkTextCursor 500ms steps(40) infinite normal;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 23em;
+    }
+  }
+
+  @keyframes blinkTextCursor {
+    from {
+      border-right-color: black;
+    }
+    to {
+      border-right-color: transparent;
+    }
   }
 }
 
@@ -63,12 +121,20 @@
       "job1"
       "job2"
       "job3";
+    grid-template-columns: 1fr;
   }
-
-  grid-template-columns: 1fr;
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+
+    #map {
+      width: 100%;
+    }
   }
 }
 
@@ -79,5 +145,28 @@
   }
   .projects {
     grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .about-info {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .contact {
+      font-size: 20px;
+      justify-content: start;
+    }
+    .items {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    #map {
+      margin-top: 1em;
+      width: 100%;
+    }
   }
 }
