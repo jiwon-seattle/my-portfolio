@@ -6,7 +6,7 @@
   "homepage": "https://jiwon-seattle.github.io/my-portfolio",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d"
+    "deploy": "gh-pages -d -d"
   },
   "author": "Jiwon Han",
   "license": "ISC",
