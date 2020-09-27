@@ -6,7 +6,6 @@
 
 - [Introduction](#Introduction)
 - [Technologies](#Technologies)
-- [Glossary](#Glossary)
 - [Contact](#Contact)
 - [License](#License)
 
