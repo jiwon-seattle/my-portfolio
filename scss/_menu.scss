@@ -45,7 +45,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -70,6 +69,7 @@
     background: lighten($secondary-color, 2);
     list-style: none;
     transform: translate3d(0, -100%, 0);
+    opacity: 0.9;
     @include easeOut;
 
     &.show {
@@ -80,6 +80,7 @@
 
   //branding side
   &-branding {
+    opacity: 0.99;
     background: darken($secondary-color, 5);
     transform: translate3d(0, 100%, 0);
     @include easeOut;
@@ -94,7 +95,6 @@
       border-radius: 50%;
       background-size: cover;
       border: solid 3px $secondary-color;
-      z-index: 1;
     }
   }
 
