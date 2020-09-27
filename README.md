@@ -13,7 +13,7 @@
 
 This is my portfolio website.
 
-<img src="dist/img/project1.png" width="500px" height="400px" alt="screenshot1" /> <img src="dist/img/project1-1.png" width="300px" height="400px" alt="screenshot2" />
+<img src="dist/img/project1.png" width="500px" height="400px" alt="screenshot1" />&nbsp;&nbsp; <img src="dist/img/project1-1.png" width="300px" height="400px" alt="screenshot2" />
 
 ## Technologies
 
