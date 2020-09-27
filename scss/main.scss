@@ -7,29 +7,6 @@
   box-sizing: border-box;
 }
 
-// .text-effects {
-//   animation: typewriter 4s steps(40) 1s 1 normal both,
-//     blinkTextCursor 500ms steps(40) infinite normal;
-// }
-
-// @keyframes typewriter {
-//   from {
-//     width: 0;
-//   }
-//   to {
-//     width: 23em;
-//   }
-// }
-
-// @keyframes blinkTextCursor {
-//   from {
-//     border-right-color: black;
-//   }
-//   to {
-//     border-right-color: transparent;
-//   }
-// }
-
 body {
   @include background;
   background: $primary-color;
