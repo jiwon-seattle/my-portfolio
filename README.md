@@ -18,7 +18,7 @@ This is my portfolio website. :point_right: http://www.jiwon-han.com/
 ## Technologies
 
 - HTML
-- Vanila Javascript
+- Javascript
 - NPM
 - SCSS
 - Google Map
