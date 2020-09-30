@@ -99,11 +99,10 @@
   box-sizing: border-box; }
 
 body {
-  background: #eff5f5;
   color: #000;
   height: 100%;
   margin: 0;
-  font-family: "Serif";
+  font-style: "Serif";
   line-height: 1.5; }
   body#bg-img {
     background: url(/dist/img/background.jpg);
@@ -166,8 +165,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio"
- "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -191,17 +189,14 @@ main {
 
 .projects {
   display: grid;
-  grid-gap: 0.7rem;
+  grid-gap: 1.2rem;
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #314e4e;
       transition: all 0.5s ease-out; }
-  .projects figcaption {
-    color: #314e4e; }
 
 .btn, .btn-dark, .btn-light {
   display: inline-block;
@@ -227,7 +222,7 @@ main {
     width: 310px; }
   .contact-info #map {
     height: 300px;
-    width: 700px; }
+    width: 500px; }
 
 #main-footer {
   text-align: center;
@@ -238,7 +233,7 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); }
+    grid-template-columns: repeat(3, 1fr); }
   .sm-heading {
     border-right: 2px solid black;
     white-space: nowrap;
@@ -278,7 +273,7 @@ main {
     to {
       border-right-color: transparent; } } }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 501px) and (max-width: 768px) {
   main {
     align-items: center;
     text-align: center; }
@@ -306,19 +301,10 @@ main {
   .bio-text {
     font-size: 18px; }
   .about-info {
-    grid-template-areas: "bioimage"
- "bio"
- "job1"
- "job2"
- "job3";
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); }
-  .contact-info {
-    display: flex;
-    flex-direction: column; }
-    .contact-info #map {
-      width: 100%; } }
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main {
